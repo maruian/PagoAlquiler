@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context="com.example.admin.provatema3.MainActivity">
+
+    <TextView
+        android:id="@+id/ultimopago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Último pago del alquiler"
+        android:textSize="28dp"
+        />
+
+    <TextView
+        android:id="@+id/textdia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Día: "
+        android:textSize="24dp"
+        android:layout_below="@+id/ultimopago"/>
+
+
+   <TextView
+        android:id="@+id/dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textSize="24dp"
+        android:inputType="textAutoComplete"
+        android:layout_alignBaseline="@id/textdia"
+        android:layout_toRightOf="@id/textdia"/>
+
+    <TextView
+        android:id="@+id/textmes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mes: "
+        android:textSize="24dp"
+        android:layout_below="@id/ultimopago"
+        android:layout_toRightOf="@+id/dia"
+        android:layout_marginLeft="25dp"/>
+
+    <TextView
+        android:id="@+id/mes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textSize="24dp"
+        android:inputType="none"
+        android:layout_alignBaseline="@id/textmes"
+        android:layout_toRightOf="@id/textmes"/>
+
+    <!-- Actualizando -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/actualizar"
+        android:layout_below="@id/textdia"
+        android:layout_marginTop="36dp"
+        android:text="Actualízame: "
+        android:textSize="28dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtActualizarDia"
+        android:layout_below="@id/actualizar"
+        android:text="Día: "
+        android:textSize="24dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/actualizarDia"
+        android:layout_alignBaseline="@id/txtActualizarDia"
+        android:layout_toRightOf="@id/txtActualizarDia"
+        android:textSize="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtActualizarMes"
+        android:layout_toRightOf="@id/actualizarDia"
+        android:layout_below="@id/actualizar"
+        android:text="Mes: "
+        android:textSize="24dp"
+        android:layout_marginLeft="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/actualizarMes"
+        android:layout_alignBaseline="@id/txtActualizarDia"
+        android:layout_toRightOf="@id/txtActualizarMes"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/botonActualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_below="@id/actualizarDia"/>
+  </RelativeLayout>
